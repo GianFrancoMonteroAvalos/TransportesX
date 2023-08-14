@@ -32,8 +32,8 @@
     <nav>
         <div class="holder"> 
         <ul>
-            <li><a class="activo" href="index.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="activo" href="nosotros.html">Nosotros</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="galeria.html">Galeria</a></li>
             <li><a href="novedades.html">Novedades</a></li>
@@ -52,7 +52,7 @@
         </a>
         <div class="staff">
             <h2>Staff</h2>
-            <div class="personas">
+            <div class="personas-container">
                 <div class="persona">
                     <img src="Imagenes/nosotros/nosotros1.png" alt="Juan Gomez">
                 <h5>Juan Gomez</h5>
@@ -60,7 +60,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque architecto. Adipisci similique doloribus ex, itaque voluptatibus at maiores perferendis, dolores numquam repellat ut voluptatum aliquid repudiandae? Necessitatibus, quo soluta.</p>
                 </div>
             </div>
-            <div class="personas">
+            <div class="personas-container">
                 <div class="persona">
                     <img src="Imagenes/nosotros/nosotros1.png" alt="Juan Gomez">
                 <h5>Juan Gomez</h5>
@@ -68,7 +68,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque architecto. Adipisci similique doloribus ex, itaque voluptatibus at maiores perferendis, dolores numquam repellat ut voluptatum aliquid repudiandae? Necessitatibus, quo soluta.</p>
                 </div>
             </div>
-            <div class="personas">
+            <div class="personas-container">
                 <div class="persona">
                     <img src="Imagenes/nosotros/nosotros1.png" alt="Juan Gomez">
                 <h5>Juan Gomez</h5>
@@ -76,7 +76,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque architecto. Adipisci similique doloribus ex, itaque voluptatibus at maiores perferendis, dolores numquam repellat ut voluptatum aliquid repudiandae? Necessitatibus, quo soluta.</p>
                 </div>
             </div>
-            <div class="personas">
+            <div class="personas-container">
+                <div class="persona">
+                    <img src="Imagenes/nosotros/nosotros1.png" alt="Juan Gomez">
+                <h5>Juan Gomez</h5>
+                <h6>Gerente General</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque architecto. Adipisci similique doloribus ex, itaque voluptatibus at maiores perferendis, dolores numquam repellat ut voluptatum aliquid repudiandae? Necessitatibus, quo soluta.</p>
+                </div>
+            </div>
+            <div class="personas-container">
                 <div class="persona">
                     <img src="Imagenes/nosotros/nosotros1.png" alt="Juan Gomez">
                 <h5>Juan Gomez</h5>
@@ -90,6 +98,16 @@
     <footer>
         <p>Diseñado por Flavia Ursino © año</p>
     </footer>
+    <script> 
+        // Función para desactivar el clic derecho en la página
+        function desactivarClicDerecho(event) {
+            event.preventDefault();
+        }
 
+        // Agregar el evento al cargar la página
+        window.onload = function() {
+            document.addEventListener("contextmenu", desactivarClicDerecho);
+        };
+    </script>
 </body>
 </html>
